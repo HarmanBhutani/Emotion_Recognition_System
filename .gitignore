@@ -1,0 +1,35 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+#intellij
+.idea
+*.iml
+out
+gen
+
+# LaTeX
+*.pdf
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# custom
+/src/dataset
