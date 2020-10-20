@@ -1,0 +1,65 @@
+\chapter{Requirement Analysis and System Specification}
+\section{Feasibility study}
+Feasibility study aims to uncover the strengths and weaknesses of a project. These are some feasibility factors by which we can used to determine that the project is feasible or not:
+\subsection{Technical Feasibility}
+Technological feasibility is carried out to determine whether the project has the capability, in terms of software, hardware, personnel to handle and fulfil the user requirements. This whole project is based on Open Source Environment and can be deployed on any OS. 
+
+In order to be able classify emotions we use datasets that are freely available like:- FER2013
+\subsection{Economic feasibility}
+This project is started with no intention of having any economic gain but still there is an option for donations. Economic Feasibility which can be categorized as follows:
+\begin{itemize}
+	\item Development costs
+	\item Operating costs
+\end{itemize}
+
+\section{Software Requirement Specification}
+\textbf{Software Requirements:-}  Software requirements are the essential part to develop a project and we are using following softwares :-
+
+\begin{enumerate}
+	\item \textbf{Tensorflow} - Tensorflow is an open source software library for machine learning across a range of tasks, and developed by Google to meet their needs for systems capable of building and training neural networks to detect and decipher patterns and correlations, analogous to the learning and reasoning which humans use.\\
+	
+	Further requirements to run tensorflow with GPU support :-
+	\begin{itemize}
+		\item CUDA® Toolkit 8.0
+		\item The NVIDIA drivers associated with CUDA Toolkit 8.0.
+		\item cuDNN v5.1
+		\item GPU card with CUDA Compute Capability 3.0 or higher
+	\end{itemize}
+	
+	\item \textbf{NumPy}- NumPy is the fundamental package for scientific computing with Python. It contains among other things: a powerful N-dimensional array object. sophisticated (broadcasting) functions.
+	
+	\item \textbf{Python} - We need to have Python 3.5 installed in our machine in order to run our code and need an IDE for Python . Here we are using Pycharm as IDE for Python and we are developing this code in that.
+	
+	\item \textbf{TFLearn} - TFlearn is a modular and transparent deep learning library built on top of Tensorflow. It was designed to provide a higher-level API to TensorFlow in order to facilitate and speed-up experimentations, while remaining fully transparent and compatible with it.
+	
+	TFLearn features include:
+	\begin{itemize}
+		\item Easy-to-use and understand high-level API for implementing deep neural networks, with tutorial and examples.
+		\item Fast prototyping through highly modular built-in neural network layers, regularizers, optimizers, metrics...
+		\item Full transparency over Tensorflow. All functions are built over tensors and can be used independently of TFLearn.
+		\item Powerful helper functions to train any TensorFlow graph, with support of multiple inputs, outputs and optimizers.
+		\item Easy and beautiful graph visualization, with details about weights, gradients, activations and more...
+		\item Effortless device placement for using multiple CPU/GPU.
+		
+	\end{itemize}
+	
+	\item \textbf{SciPy} - SciPy is an open source Python library used for scientific computing and technical computing.\\
+	SciPy contains modules for optimization, linear algebra, integration, interpolation, special functions, FFT, signal and image processing, ODE solvers and other tasks common in science and engineering.
+	
+	\item \textbf{Python Imaging Library} - PIL is a free library for the Python programming language that adds support for opening, manipulating, and saving many different image file formats. It is available for Windows, Mac OS X and Linux. The latest version of PIL is 1.1.7.
+	
+	\item \textbf{Pandas} - Pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series. pandas is free software released under the three-clause BSD license.
+	
+	\item \textbf{Matplotlib} - Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK+.
+	
+	\item \textbf{OpenCV} - OpenCV (Open Source Computer Vision) is a library of programming functions mainly aimed at real-time computer vision. The library is cross-platform and free for use under the open-source BSD license.
+	
+\end{enumerate}
+
+\section{Hardware Requirement Specification}
+\textbf{Hardware Requirements:-}  Hardware requirements are the another essential part to develop a project and are as follows:-
+\begin{enumerate}
+	\item \textbf{Disk Space} is one of the important key requirements of a software development project.\\The space a software need to be properly working is also called minimum space requirement needed to be specified alongside the software specification.
+	\item \textbf{CPU} is another important requirement of the software that needed to be fulfilled. A fast CPU means better software response and lesser performance lags
+	\item\textbf{GPU} is another important but optional requirement of the software.\\This project can work without the presence of a GPU but the presence of a GPU boost the model creation process that needed for the emotion classification dramatically.
+\end{enumerate}

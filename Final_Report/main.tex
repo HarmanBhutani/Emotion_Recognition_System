@@ -1,0 +1,66 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[left=3.5cm, top=2.5cm, right=1.25cm, bottom=1.25cm,footskip=0.75cm]{geometry}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{url}
+\onehalfspacing
+%\usepackage{times}
+%\titleformat{\chapter}[block]{\normalfont\Large}{\chaptertitlename\ \thechapter:}{1ex}{\rule{\textwidth}{1pt}\vspace{1ex}\centering} % before-code[\vspace{-0.5ex}%\rule{\textwidth}{0.3pt}]
+\titleformat{\chapter}[display]{\filleft\normalfont\Huge\bfseries}{\chaptertitlename\ \thechapter}{5pt}{\Huge}
+
+\renewcommand{\listfigurename}{\begin{tabular}{l c r}
+		\hline
+		Fig.No. & Figure Description &  Page No.\\
+		\hline
+\end{tabular}}
+\renewcommand{\listtablename}{\begin{tabular}{l c r}
+\hline
+Table No. & Table Description &  Page No.\\
+\hline
+\end{tabular}}
+\begin{document}
+	\input{title_page/title.tex}
+	\newpage
+	
+	\pagenumbering{Roman}
+	
+	\input{acknowledgement/abstract.tex}
+	\newpage
+	
+	\input{acknowledgement/acknowledgement.tex}
+	\newpage
+	
+	\listoffigures
+	\newpage
+	
+	\listoftables
+	\newpage
+	
+	\tableofcontents
+	\newpage
+	
+	\setcounter{page}{1}
+	\pagenumbering{arabic}
+	\input{chapters/Introduction.tex}
+	\newpage
+	
+	\input{chapters/Requirement_Analysis_and_System_Specification.tex}
+	\newpage
+	
+	\input{chapters/System_Design.tex}
+	\newpage
+	
+	\input{chapters/Implementation_Testing_and_Maintenance.tex}
+	\newpage
+	
+	\input{chapters/Results_and_Discussions.tex}
+	\newpage
+	
+	\input{chapters/Conclusion_and_Future_Scope.tex}
+	\newpage
+	
+	\input{chapters/References.tex}
+\end{document}
